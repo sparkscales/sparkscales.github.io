@@ -1,0 +1,17 @@
+.portfolio__item {
+  flex-grow: 1;
+  width: 100%;
+  height: auto;
+}
+
+.portfolio__image {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  & img {
+    height: auto;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}

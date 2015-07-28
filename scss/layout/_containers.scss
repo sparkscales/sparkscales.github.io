@@ -1,0 +1,30 @@
+#sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 260px;
+    z-index: 101;
+    height: 100%;
+    background: #ccc;
+    padding-top: 53px;
+}
+
+#content {
+    position: relative;
+    padding-left: 260px;
+    z-index: 100;
+    background: #f5f5f5;
+    display: flex;
+}
+
+#ajax-content {
+  display: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+}
