@@ -12,6 +12,7 @@
     "gulp": "^3.9.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.0.3",
-    "gulp-sourcemaps": "^1.5.2"
+    "gulp-sourcemaps": "^1.5.2",
+    "isotope-layout": "^2.2.1"
   }
 }

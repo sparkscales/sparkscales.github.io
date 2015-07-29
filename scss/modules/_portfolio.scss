@@ -1,0 +1,26 @@
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 2em 2em 2em;
+  padding-left: 1%;
+  @media screen and (min-width: 600px) {
+   padding-left: 1%;
+  }
+
+}
+
+.portfolio__item {
+  line-height: 0;
+  width: 49%;
+  padding: 3% 3% 0 0;
+  @media screen and (min-width: 600px) {
+    width: 33%;
+    padding: 1% 1% 0 0;
+  }
+}
+.portfolio__image {
+
+  img {
+    width: 100%;
+  }
+}

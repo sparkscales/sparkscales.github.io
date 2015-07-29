@@ -1,30 +1,24 @@
-#sidebar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 260px;
-    z-index: 101;
-    height: 100%;
-    background: #ccc;
-    padding-top: 53px;
+
+.wrapper {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  height: 100%;
 }
 
-#content {
-    position: relative;
-    padding-left: 260px;
-    z-index: 100;
-    background: #f5f5f5;
-    display: flex;
-}
-
-#ajax-content {
-  display: none;
-}
-
-.container {
+#header {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em 2em 0 2em;
+  border-bottom: solid 1px #e7e7e7;
+  margin: 2em;
+}
 
+html {
+  background: url('../images/crossword.png' ) 0 0 transparent repeat;
+
+}
+figure {
+  margin: 0;
 }
