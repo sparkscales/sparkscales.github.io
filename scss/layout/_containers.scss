@@ -4,21 +4,104 @@
   max-width: 1300px;
   margin: 0 auto;
   height: 100%;
+  position: relative;
 }
 
+.page-headlines {
+  display:inline-block;
+  bottom: 8px;
+  position: relative;
+  text-align: left;
+  overflow: hidden;
+  @media screen and (min-width: 900px) {
+    display: block;
+    bottom: 0;
+    text-align: center;
+  }
+}
 #header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 2em 2em 0 2em;
+  position: fixed;
+  width: 100%;
+  padding: .7em 0 .5em 0;
   border-bottom: solid 1px #e7e7e7;
-  margin: 2em;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+  transition: position .3s, float .3s;
+  max-width: 1240px;
+  background: linear-gradient(to right, #f5f5f5 0%,#f8f8f8 50%,#f5f5f5 100%);
+  box-shadow: 0px 4px 2px -2px rgba(0,0,0,0.3);
+  h1, h2 {
+
+  }
+  .navigation__container{
+    float:right;
+    margin-right: 25px;
+    display: none;;
+  }
+  .logo__container {
+    float: left;
+    margin-left: 25px;
+
+  }
+   &.sticky {
+    background: linear-gradient(to right, #f5f5f5 0%,#f8f8f8 50%,#f5f5f5 100%);
+    // flex-direction: row;
+    box-shadow: 0px 4px 2px -2px rgba(0,0,0,0.3);
+    padding: .7em 0 .5em 0 ;
+    max-width: 1240px;
+    h1, h2 {
+      // display: none;
+      transform: translateY(-50px);
+
+    }
+    .page-headlines { display: inline-block; }
+    .navigation__container{
+      float:right;
+      margin-right: 25px;
+    }
+    .logo__container {
+      float: left;
+      margin-left: 25px;
+    }
+   }
+   @media screen and (min-width: 769px) {
+     .navigation__container{ display: block; }
+   }
+   @media screen and (min-width: 900px) {
+    background: #f5f5f5;
+     max-width: 1300px;
+     padding: 2em 2em 0 2em;
+
+     h1, h2 {
+       display: block;
+     }
+     .navigation__container{
+       float:none;
+       margin-right: 0;
+     }
+     .logo__container {
+       float: none;
+       margin-left: 0;
+     }
+   }
 }
-
 html {
-  background: url('../images/crossword.png' ) 0 0 transparent repeat;
-
+  // background: url('../images/crossword.png' ) 0 0 transparent repeat;
 }
 figure {
   margin: 0;
+}
+.container {
+  padding-top: 100px;
+  @media screen and (min-width: 900px) {
+    padding-top: 220px;
+
+  }
+}
+body {
+  background: #F5F5F5;
 }
