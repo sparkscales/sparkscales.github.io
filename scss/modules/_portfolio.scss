@@ -10,10 +10,15 @@
 
 .portfolio__item {
   line-height: 0;
+  width: 100%;
+    padding: 3% 3% 0 3%;
+
+  overflow: hidden;
+  @media screen and (min-width: 500px ){
   width: 49%;
   padding: 3% 3% 0 0;
-  overflow: hidden;
-  @media screen and (min-width: 600px) {
+}
+  @media screen and (min-width: 700px) {
     width: 33%;
     padding: 1% 1% 0 0;
   }

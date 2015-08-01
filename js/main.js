@@ -14,3 +14,10 @@ var $grid = $('.portfolio').isotope({
 $grid.imagesLoaded().progress( function() {
   $grid.isotope('layout');
 });
+
+$(document).ready(function() {
+
+  $('#mobile-button').click(function(event) {
+    $('body').toggleClass('is-open');
+  });
+});
