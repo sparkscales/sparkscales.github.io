@@ -1,23 +1,26 @@
-$(window).scroll(function() {
-if ($(this).scrollTop() > 30){
-    $('#header').addClass("sticky");
-  }
-  else{
-    $('#header').removeClass("sticky");
-  }
-});
+// var $grid = $('.portfolio').isotope({
+//   itemSelector: '.portfolio__item',
+//   transitionDuration: '0.6s',
+//   masonry: {
+//     columnWidth: 320
+//   }
+//     // layoutMode: 'packery'
+// });
+// // layout Isotope after each image loads
+// $grid.imagesLoaded().progress( function() {
+//   $grid.isotope('layout');
+// });
 
-var $grid = $('.portfolio').isotope({
-  itemSelector: '.portfolio__item',
-});
-// layout Isotope after each image loads
-$grid.imagesLoaded().progress( function() {
-  $grid.isotope('layout');
-});
+$(document).ready( function() {
 
-$(document).ready(function() {
-
-  $('#mobile-button').click(function(event) {
-    $('body').toggleClass('is-open');
+var $grid = $('.portfolio').imagesLoaded( function() {
+  // init Isotope after all images have loaded
+  $grid.isotope({
+    itemSelector: '.portfolio__item',
+    transitionDuration: '0.6s',
+    masonry: {
+      columnWidth: 320
+    }
+    });
   });
 });

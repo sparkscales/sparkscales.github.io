@@ -1,8 +1,8 @@
 .logo__container {
-  text-align: center;
-  animation-name: dropHeader;
-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
-  animation-duration: 0.3s;
-    animation-delay: .1s;
-  transition: all .2s;
+  margin: 20px auto;
+  width: 200px;
+}
+.page-headlines {
+  display: inline-block;
+  color: #fff;
 }
