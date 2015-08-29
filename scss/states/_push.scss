@@ -5,7 +5,6 @@
 }
   .wrapper {
     transform: translate3d(-300px, 0, 0);
-    z-index: 99;
   }
 
   .mobile-navigation__item  {
@@ -49,3 +48,16 @@
     transform: translate3d(0, 0, 0);
   }
 }
+
+.sticky {
+  #header {
+    height: 112px;
+    background: #111;
+    position: fixed;
+    z-index: 100;
+    animation: header 1s;
+    }
+    // .wrapper {
+    //   padding-top: 112px;
+    // }
+  }

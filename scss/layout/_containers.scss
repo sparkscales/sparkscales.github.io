@@ -1,14 +1,19 @@
 
 .wrapper {
   width: 100%;
-
+    transition: all 0.5s;
 }
 
 #header {
-height: 70px;
+height: 100px;
 width: 100%;
+    transition: all 0.5s;
 }
-
+.body-wrap {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
 body {
   background: url('../images/zwartevilt.png') 0 0 repeat #333;
 }

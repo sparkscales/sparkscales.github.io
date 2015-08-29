@@ -24,3 +24,19 @@ var $grid = $('.portfolio').imagesLoaded( function() {
     });
   });
 });
+
+$(document).ready(function() {
+
+  $('#mobile-button').click(function(event) {
+    $('body').toggleClass('is-open');
+  });
+});
+
+$(window).scroll(function() {
+if ($(this).scrollTop() > 100){
+    $('body').addClass("sticky");
+  }
+  else{
+    $('body').removeClass("sticky");
+  }
+});
