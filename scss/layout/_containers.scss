@@ -1,7 +1,7 @@
 
 .wrapper {
   width: 100%;
-  
+
 }
 
 #header {
@@ -11,4 +11,15 @@ width: 100%;
 
 body {
   background: url('../images/zwartevilt.png') 0 0 repeat #333;
+}
+.footer {
+  background: #060606;
+  padding: 20px 40px;
+  margin-top: 40px;
+  span {
+    color: #fff;
+    font-style: italic;
+    font-family: georige, serif;
+    letter-spacing: 1px;
+  }
 }
