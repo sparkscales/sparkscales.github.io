@@ -20,6 +20,10 @@
   float: left;
   margin: 10px;
   position: relative;
+  // opacity: 0;
+  //     animation: fadeIn ease-in 1;
+  //     animation-fill-mode: forwards;
+  //     animation-duration: 1s;
   @include media($medium-screen) {
     height: 400px;
     width: 300px;
@@ -35,6 +39,22 @@
 
     }
   }
+  // &:nth-child(1){ animation-delay: .2s}
+  // &:nth-child(2){ animation-delay: .4s}
+  // &:nth-child(3){ animation-delay: .6s}
+  // &:nth-child(4){ animation-delay: .8s}
+  // &:nth-child(5){ animation-delay: 1s}
+  // &:nth-child(6){ animation-delay: 1.2s}
+  // &:nth-child(7){ animation-delay: 1.4s}
+  // &:nth-child(8){ animation-delay: 1.6s}
+  // &:nth-child(9){ animation-delay: 1.8s}
+  // &:nth-child(10){ animation-delay: 2s}
+  // &:nth-child(11){ animation-delay: 2.2s}
+  // &:nth-child(12){ animation-delay: 2.4s}
+  // &:nth-child(13){ animation-delay: 2.6s}
+  // &:nth-child(14){ animation-delay: 2.8s}
+  // &:nth-child(15){ animation-delay: 3s}
+  // &:nth-child(16){ animation-delay: 3.2s}
 }
 
 .portfolio__item--large-content {
@@ -285,19 +305,6 @@ backface-visibility: hidden;
   color: #747474;
   display:inline-block;
   margin-left: 10px;
-}
-
-.button {
-  text-transform: uppercase;
-  color: #747474;
-  border-radius: 5px;
-  border: 1px solid #747474;
-  padding: em(16);
-  width: 100%;
-  letter-spacing: 1px;
-  margin: 20px 0;
-  text-align: center;
-  display:block;
 }
 
 .icon {

@@ -1,18 +1,28 @@
 
 .wrapper {
   width: 100%;
-    transition: all 0.5s;
+    transition: transform 0.5s;
+    margin-top: 112px;
+    margin-bottom: 100px;
 }
 
 #header {
 height: 100px;
 width: 100%;
-    transition: all 0.5s;
+transition: transform 0.5s, width 0.5s;
+height: 112px;
+background: #111;
+position: fixed;
+z-index: 100;
+animation: header 1s linear;
+top:0;
+right: 0;
 }
 .body-wrap {
   height: 100%;
   width: 100%;
   position: relative;
+
 }
 body {
   background: url('../images/zwartevilt.png') 0 0 repeat #333;
@@ -21,6 +31,11 @@ body {
   background: #060606;
   padding: 20px 40px;
   margin-top: 40px;
+  position: fixed;
+  z-index:101;
+  bottom:0;
+  left:0;
+  width: 100%;
   span {
     color: #fff;
     font-style: italic;
