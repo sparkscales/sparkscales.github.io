@@ -17,19 +17,19 @@
   .mobile-navigation__item  {
       transform: translateX(0px);
     &:nth-child(1) {
-      transition-delay: transform .2s;
+      transition-delay: .2s;
     }
     &:nth-child(2) {
-      transition-delay: transform .4s;
+      transition-delay: .4s;
     }
     &:nth-child(3) {
-      transition-delay: transform .6s;
+      transition-delay: .6s;
     }
     &:nth-child(4) {
-      transition-delay: transform .8s;
+      transition-delay: .8s;
     }
     &:nth-child(5) {
-      transition-delay: transform 1s;
+      transition-delay: 1s;
     }
   }
 

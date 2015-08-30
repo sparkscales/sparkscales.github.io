@@ -1,11 +1,14 @@
 
 .wrapper {
   width: 100%;
-    transition: transform 0.5s;
+
     margin-top: 112px;
     margin-bottom: 100px;
+      transition: all .5s;
 }
-
+.body-wrap {
+  transition: all .5s;
+}
 #header {
 height: 100px;
 width: 100%;

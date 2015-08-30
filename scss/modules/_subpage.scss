@@ -1,0 +1,25 @@
+.back-link {
+  float:right;
+  color: #d7d7d7;
+
+    a {
+    padding: 45px 45px 45px 45px;
+    text-transform: uppercase;
+    color: #d7d7d7;
+    text-decoration: none;
+    display: inline-block;
+
+    transition: all .3s;
+    &:hover {
+      background: #333;
+      i {
+        padding-right: 20px;
+      }
+    }
+    i {
+      padding-right: 10px;
+      transition: all .3s;
+    }
+  }
+
+}

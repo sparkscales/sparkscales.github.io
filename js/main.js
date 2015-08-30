@@ -41,7 +41,7 @@ $(window).load(function() {
       // options...
       animationEngine: 'best-available',
       itemSelector: '.portfolio__item',
-      packery: {
+      masonry: {
         columnWidth: 320
       }
       });
@@ -56,8 +56,6 @@ $(window).load(function() {
 
   });
 });
-
-
 
 
 

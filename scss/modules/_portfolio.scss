@@ -1,4 +1,5 @@
 .portfolio {
+  transition: width .5s;
   @include outer-container;
   width: 100%;
   max-width: em(320);
@@ -20,10 +21,6 @@
   float: left;
   margin: 10px;
   position: relative;
-  // opacity: 0;
-  //     animation: fadeIn ease-in 1;
-  //     animation-fill-mode: forwards;
-  //     animation-duration: 1s;
   @include media($medium-screen) {
     height: 400px;
     width: 300px;
@@ -39,22 +36,6 @@
 
     }
   }
-  // &:nth-child(1){ animation-delay: .2s}
-  // &:nth-child(2){ animation-delay: .4s}
-  // &:nth-child(3){ animation-delay: .6s}
-  // &:nth-child(4){ animation-delay: .8s}
-  // &:nth-child(5){ animation-delay: 1s}
-  // &:nth-child(6){ animation-delay: 1.2s}
-  // &:nth-child(7){ animation-delay: 1.4s}
-  // &:nth-child(8){ animation-delay: 1.6s}
-  // &:nth-child(9){ animation-delay: 1.8s}
-  // &:nth-child(10){ animation-delay: 2s}
-  // &:nth-child(11){ animation-delay: 2.2s}
-  // &:nth-child(12){ animation-delay: 2.4s}
-  // &:nth-child(13){ animation-delay: 2.6s}
-  // &:nth-child(14){ animation-delay: 2.8s}
-  // &:nth-child(15){ animation-delay: 3s}
-  // &:nth-child(16){ animation-delay: 3.2s}
 }
 
 .portfolio__item--large-content {
@@ -80,8 +61,8 @@ backface-visibility: hidden;
   padding: em(15) em(40);
   width: 100%;
   @include media(em(700)) {
-    min-height: 220px;
-    padding: em(35) em(40) em(25) em(40);
+    min-height: 157px;
+    padding: 2.1875em 2.5em 2.5625em;
   }
 
   @include media(em(700)) {
@@ -218,8 +199,6 @@ backface-visibility: hidden;
       top: 42px;
     }
   }
-
-
 }
 
 @include media(em(700)) {
@@ -258,7 +237,7 @@ backface-visibility: hidden;
         background-color: rgb(255, 255, 255);
         background-color: rgba(255, 255, 255, 1);
         transition: all .5s;
-        transition-delay: .5s;
+        transition-delay: .3s;
       }
     }
   }
@@ -323,3 +302,103 @@ backface-visibility: hidden;
 }
 
 #plane i { margin-left:-4px;}
+
+.portfolio__item--xlarge {
+  @include media(em(700)) {
+    width: 620px;
+    height: 820px;
+  }
+}
+.portfolio__textfield {
+  background: #fff;
+  padding: em(35) em(40) em(25) em(40);
+  height: 400px;
+  width: 300px;
+}
+.portfolio__body-text {
+  padding-top: 15px;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+}
+.portfolio__item--arrow {
+  background: #1B1B1B;
+  width:300px;
+  height: 100px;
+  overflow: hidden;
+
+  @include media(em(981)) {
+    height: 190px;
+  }
+
+  @include media(em(1300)) {
+    width: 620px;
+    height: 100px;
+  }
+  a {
+    color: #A0A0A0;
+    &:hover .arrow {
+        background: #2B2B2B;
+      }
+    }
+  }
+.arrow__link {
+  text-align: left;
+  padding-top: 37px;
+  padding-bottom: 37px;
+  // text-transform: uppercase;
+  font-family: georiga, serif;
+  transition: all .5s;
+  @include media(min-width em(981) max-width em(1299)) {
+        padding-top: 84px;
+  }
+  &--left {
+    float: left;
+    padding-left: 30px;
+  }
+  &--right {
+    float: right;
+    padding-right: 30px;
+  }
+
+}
+
+.arrow {
+  height: 100px;
+  width: 100px;
+  background: #232323;
+  position: relative;
+  transition: all .5s;
+
+  @include media(em(981)) {
+    height: 190px;
+    width: 90px;
+  }
+
+  @include media(em(1300)) {
+    width: 100px;
+    height: 100px;
+  }
+
+  &__previous {
+    float: left;
+  }
+
+  &__next {
+  float: right;
+  }
+
+  i {
+    position: absolute;
+    top: 39%;
+    left: 39%;
+    font-size: em(24);
+  @include media(em(981)) {
+        top: 43%;
+    }
+    @include media(em(1300)) {
+      top: 41%;
+      left: 41%;
+    }
+
+  }
+}

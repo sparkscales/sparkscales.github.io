@@ -429,3 +429,7 @@ th {
 }
 
 * { box-sizing: border-box;}
+
+.cleafix {
+  @include clearfix;
+}
