@@ -102,6 +102,7 @@ backface-visibility: hidden;
   width: 100%;
   text-align: center;
   border-top: rgba(0,0,0,.5) solid 1px;
+  border-color: #FCB040;
   margin: 0 auto;
   padding-bottom: 1em;
 }
@@ -139,12 +140,6 @@ backface-visibility: hidden;
         }
       }
     }
-
-
-
- figcaption {
-
-}
 
 .portfolio__box {
   position: absolute;
@@ -419,7 +414,27 @@ transition: background-color .5s;
 .mTop {
   margin-top: 30px;
 }
+.orange-border {
+  border-color: #FCB040;
+}
 .bImage {
-  background: url(../images/back_s.png) -481% -139% no-repeat transparent;
+  background: url(../images/back_s.png) 99px 194px no-repeat transparent;
+  padding-top: 102px;
   background-color: #fff;
+//   &::after {
+//     position: absolute;
+// top: 10px;
+// right: 10px;
+// bottom: 10px;
+// left: 10px;
+// border: 1px solid #e8e8e8;
+// content: '';
+//   }
+  .portfolio__hr {
+    margin-top: 1em;
+  }
+}
+
+.fa-envelope {
+  color: #BBBBBB;
 }
