@@ -45,7 +45,7 @@ button {
   position: relative;
   overflow: hidden;
   span {
-    transition: transform 0.3s, opacity 0.3s;
+    transition: transform 0.5s, opacity 0.5s;
     transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
     opacity: 1;
     transform: translate3d(0, 0, 0);
@@ -65,7 +65,7 @@ button {
       transform: translate3d(0, 100%, 0);
     }
     &::before {
-      animation: ani-button 0.3s forwards ease-in;
+      animation: ani-button 0.5s forwards ease-in;
     }
   }
   &::before {

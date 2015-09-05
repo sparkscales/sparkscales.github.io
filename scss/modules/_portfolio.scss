@@ -20,8 +20,12 @@
   height: 400px;;
   overflow: hidden;
   float: left;
-  margin: 10px;
+  margin: 10px 0;
   position: relative;
+  @include media(em(900)) {
+    margin: 10px;
+  }
+
   @include media($medium-screen) {
     height: 400px;
     width: 300px;
@@ -166,10 +170,7 @@ backface-visibility: hidden;
   }
   &--right {
     @include media(em(700)) {
-
-
   }
-
   }
 }
 
@@ -326,9 +327,15 @@ backface-visibility: hidden;
   width:300px;
   height: 100px;
   overflow: hidden;
-  transition: all .3s;
+  transition: background-color .3s;
   &:hover {
     background: #3C3C3C;
+    .arrow__next i {
+      left: 49%;
+    }
+    .arrow__previous i {
+      left: 30%;
+    }
   }
 
   @include media(em(981)) {
@@ -352,9 +359,10 @@ backface-visibility: hidden;
   text-align: left;
   padding-top: 37px;
   padding-bottom: 37px;
+      height: 100px;
   // text-transform: uppercase;
   font-family: georiga, serif;
-  transition: all .5s;
+  // transition: all .5s;
   @include media(min-width em(981) max-width em(1299)) {
         padding-top: 84px;
   }
@@ -366,7 +374,6 @@ backface-visibility: hidden;
     float: right;
     padding-right: 30px;
   }
-
 }
 
 .arrow {
@@ -374,7 +381,7 @@ backface-visibility: hidden;
   width: 100px;
   background: #232323;
   position: relative;
-  transition: all .5s;
+transition: background-color .5s;
 
   @include media(em(981)) {
     height: 190px;
@@ -399,6 +406,7 @@ backface-visibility: hidden;
     top: 39%;
     left: 39%;
     font-size: em(24);
+    transition: all .3s;
   @include media(em(981)) {
         top: 43%;
     }
@@ -406,7 +414,6 @@ backface-visibility: hidden;
       top: 41%;
       left: 41%;
     }
-
   }
 }
 .mTop {

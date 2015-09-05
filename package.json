@@ -14,5 +14,8 @@
     "gulp-sass": "^2.0.3",
     "gulp-sourcemaps": "^1.5.2",
     "isotope-layout": "^2.2.1"
+  },
+  "dependencies": {
+    "imagemin": "^3.2.0"
   }
 }

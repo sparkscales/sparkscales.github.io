@@ -53,12 +53,13 @@ picture {
   margin: 0;
   max-width: 100%;
 }
-
+figure {margin: 0;}
+figcaption {@extend figure}
 .page-headline {
   font-size: 1.4rem;
   padding: 0;
   margin: 0;
-  color: #fff;
+  color: #747474;
 }
 .page-subheadline {
   font-size: .7rem;
@@ -67,7 +68,5 @@ picture {
   margin: 0;
   font-weight: 300;
   letter-spacing: 1px;
-    color: #fff;
+    color: #747474;
 }
-figure {margin: 0;}
-figcaption {@extend figure}

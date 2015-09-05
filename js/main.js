@@ -2,31 +2,35 @@
 
 $(window).load(function() {
 
-    // cache container
-    var $container = $('.portfolio').imagesLoaded( function() {
+  // cache container
+  var $container = $('.portfolio').imagesLoaded( function() {
 
-      // initialize isotope
-      $container.isotope({
-      // options...
-      animationEngine: 'best-available',
-      itemSelector: '.portfolio__item',
-      masonry: {
-        columnWidth: 320
-      }
-      });
+    // initialize isotope
+    $container.isotope({
+    // options...
+    animationEngine: 'best-available',
+    itemSelector: '.portfolio__item',
+    masonry: {
+      columnWidth: 320
+    }
     });
 
-    // filter items when filter link is clicked
-    $('#isotope_filters li a').on('click', function() {
+  // filter items when filter link is clicked
+});
+  $('#isotope_filters li a').on('click', function() {
     var selector = $(this).attr('data-filter');
     $container.isotope({
-    filter: selector
+      filter: selector
     });
   });
 });
 
 // FILTER TOGGLE
 
-  $('#mobile-button').click(function(event) {
-    $('body').toggleClass('is-open');
-  });
+$('#mobile-button').click(function(event) {
+
+  $('body').toggleClass('is-open');
+
+});
+
+// change size of item by toggling gigante class
