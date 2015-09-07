@@ -53,9 +53,15 @@
 .portfolio__image {
   position: relative;
   z-index: 5;
+  max-width: 300px;
+@include media(em(700)) {
+  max-width: 100%;
+}
+
  & img {
 transition: opacity .75s, transform .75s;
 backface-visibility: hidden;
+
  }
 }
 .portfolio__caption {

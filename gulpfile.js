@@ -22,7 +22,7 @@ gulp.task('compileSass', function() {
 
 gulp.task('default', function () {
     gulp.src('./scss/style.scss')
-        .pipe(sass({sourceComments: 'map'}))
+        .pipe(sass())
         .pipe(please(PleeeaseOptions))
         .pipe(gulp.dest('css'));
 });
