@@ -1,0 +1,372 @@
+
+.portfolio__animation-image-container {
+  width: 300px;
+  height: 400px;
+  background: #c7c7c7;
+  position: relative;
+  background: url('http://www.stevescales.com/images/ss_bg.jpg');
+    overflow: hidden;
+}
+.face {
+  width: 156px;
+  position: absolute;
+  z-index: 0;
+  top: 44px;
+  left: 12px;
+}
+.biopic {
+  width:175px;
+  height: 275px;
+  position: relative;
+  left: 45%;
+  transform: translateX(-50%) translateY(-50%);
+  top:50%;
+
+}
+.nut {
+  background: url('http://www.stevescales.com/images/ss_nut_overlay.png');
+  width: 175px;
+  height: 275px;
+  position: absolute;
+  z-index: 1000;
+}
+#left_eye {
+  animation: blink 15s infinite;
+ transform-origin: 60px 100px;
+}
+#right_eye {
+    animation: blink 15s infinite;
+ transform-origin: 100px 70px;
+}
+
+@keyframes blink {
+  0% {
+    transform: scaleX(1) scaleY(1)  ;
+  }
+  .19% {
+    transform: scaleX(1.3) scaleY(0.1);
+  }
+  .2% {
+    transform: scaleX(1) scaleY(1) ;
+  }
+  9% {
+    transform: translate(0, 0);
+  }
+  9.25% {
+    transform:translate(-7px, 2px);
+  }
+  18% {
+    transform:translate(-7px, 2px);
+  }
+  18.15% {
+    transform:translate(4px, -3px);
+  }
+  32% {
+    transform:translate(4px, -3px);
+  }
+  32.15% {
+    transform:translate(0, 0);
+  }
+  60% {
+    transform: scaleX(1) scaleY(1);
+  }
+  60.19% {
+    transform: scaleX(1.3) scaleY(0.1);
+  }
+  60.2% {
+    transform: scaleX(1) scaleY(1);
+  }
+  72% {
+    transform:translate(0, 0);
+  }
+  72.1% {
+    transform:translate(4px, -3px);
+  }
+  79.9% {
+    transform:translate(4px, -3px);
+  }
+  80% {
+    transform:translate(0, 0);
+  }
+  87% {
+    transform:translate(0, 0);
+  }
+  92.1% {
+    transform: translate( 3px,-15px);
+  }
+  99% {
+    transform: translate( 3px, -15px);
+  }
+  99.5% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: scaleX(1) scaleY(1);
+  }
+}
+
+.portfolio__image:hover .portfolio__animation-image-container #eyebrow_left {
+
+    transform: rotatez(-15deg);
+
+}
+
+.portfolio__image:hover .portfolio__animation-image-container #eyebrow_right {
+
+    transform: rotatez(15deg);
+}
+.portfolio__animation-image-container #eyebrow_right {
+    transition: 1s all;
+ transform-origin: 144px 39px;
+
+}
+.portfolio__animation-image-container #eyebrow_left  {
+    transition: 1s all;
+  transform-origin: 40px 93px;
+}
+
+.ss_resume {
+  width: 230px;
+  position: absolute;
+  top:15%;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-box-shadow: 0px 0px 53px -16px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 53px -16px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 53px -16px rgba(0,0,0,0.75);
+
+  transition: 1s;
+}
+.portfolio__image:hover .portfolio__animation-image-container .ss_resume {
+  top: 10%;
+  transform: scale(1.1) translateX(-45%);
+}
+#whitecircle {
+  animation: hidden 9s infinite;
+}
+#s {
+      transform-origin: 168px 127px;
+  animation: hidden 9s infinite;
+
+}
+
+.bump {
+  animation: bump 9s infinite;
+}
+
+@keyframes hidden {
+  0% {opacity: 1;}
+  50% {opacity: 1;}
+  59% {opacity: 0;}
+  85% {opacity: 0;}
+  90% { opacity: 1;}
+  100% {opacity:1;}
+}
+@keyframes bump {
+   0% {transform: translateY(0);}
+  60% {transform: translateY(0);}
+  62% {transform: translateY(20px);}
+  64% {transform: translateY(0);}
+  68% {transform: translateY(0);}
+  70% {transform: translateY(20px);}
+  72% {transform: translateY(0);}
+  90% { transform: translateY(0);;}
+  100% {transform: translateY(0);}
+}
+
+.ss_contact {
+  background: url('http://www.stevescales.com/images/ss_flight_path.png') no-repeat;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 150px;
+  z-index: 11;
+
+}
+.ss_plane {
+  background: url('http://www.stevescales.com/images/ss_plane.png') no-repeat;
+  height: 130px;
+  width: 180px;
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  animation: sway 8s infinite;
+}
+.contact_face {
+width: 100%;
+  max-width: 203px;
+  position: absolute;
+  right:-20px;
+    top: 19px;
+  z-index: 10;
+      transform-origin: center center
+}
+
+.portfolio__image:hover .portfolio__animation-image-container .contact_face  {
+  animation: shake 100ms ease-in-out infinite
+
+}
+
+@keyframes sway {
+  0% {transform: rotate(0);}
+  47% {transform: rotate(0);}
+  50% {transform: translateX(5px) rotate(5deg);}
+  51% {transform: translateX(-5px)rotate(-5deg);}
+  53% {transform: rotate(0);}
+  100% {transform: rotate(0);}
+}
+
+@keyframes shake {
+    2% {
+        transform: translate(1.5px, 1.5px) rotate(-0.5deg)
+    }
+    4% {
+        transform: translate(-1.5px, 1.5px) rotate(1.5deg)
+    }
+    6% {
+        transform: translate(1.5px, 2.5px) rotate(-0.5deg)
+    }
+    8% {
+        transform: translate(1.5px, -0.5px) rotate(0.5deg)
+    }
+    10% {
+        transform: translate(2.5px, 0.5px) rotate(0.5deg)
+    }
+    12% {
+        transform: translate(-1.5px, -0.5px) rotate(1.5deg)
+    }
+    14% {
+        transform: translate(1.5px, 1.5px) rotate(1.5deg)
+    }
+    16% {
+        transform: translate(0.5px, 0.5px) rotate(-0.5deg)
+    }
+    18% {
+        transform: translate(-1.5px, -1.5px) rotate(1.5deg)
+    }
+    20% {
+        transform: translate(1.5px, 2.5px) rotate(1.5deg)
+    }
+    22% {
+        transform: translate(0.5px, 2.5px) rotate(1.5deg)
+    }
+    24% {
+        transform: translate(2.5px, 1.5px) rotate(-0.5deg)
+    }
+    26% {
+        transform: translate(0.5px, 1.5px) rotate(1.5deg)
+    }
+    28% {
+        transform: translate(-0.5px, -1.5px) rotate(-0.5deg)
+    }
+    30% {
+        transform: translate(-0.5px, 1.5px) rotate(-0.5deg)
+    }
+    32% {
+        transform: translate(1.5px, 1.5px) rotate(-0.5deg)
+    }
+    34% {
+        transform: translate(-1.5px, 0.5px) rotate(1.5deg)
+    }
+    36% {
+        transform: translate(2.5px, 0.5px) rotate(-0.5deg)
+    }
+    38% {
+        transform: translate(-0.5px, -0.5px) rotate(0.5deg)
+    }
+    40% {
+        transform: translate(0.5px, -1.5px) rotate(-0.5deg)
+    }
+    42% {
+        transform: translate(0.5px, 1.5px) rotate(1.5deg)
+    }
+    44% {
+        transform: translate(2.5px, 0.5px) rotate(-0.5deg)
+    }
+    46% {
+        transform: translate(2.5px, 0.5px) rotate(1.5deg)
+    }
+    48% {
+        transform: translate(1.5px, 1.5px) rotate(-0.5deg)
+    }
+    50% {
+        transform: translate(-0.5px, -0.5px) rotate(1.5deg)
+    }
+    52% {
+        transform: translate(2.5px, -1.5px) rotate(0.5deg)
+    }
+    54% {
+        transform: translate(0.5px, 2.5px) rotate(1.5deg)
+    }
+    56% {
+        transform: translate(0.5px, 2.5px) rotate(-0.5deg)
+    }
+    58% {
+        transform: translate(1.5px, 0.5px) rotate(-0.5deg)
+    }
+    60% {
+        transform: translate(1.5px, 1.5px) rotate(-0.5deg)
+    }
+    62% {
+        transform: translate(2.5px, -1.5px) rotate(1.5deg)
+    }
+    64% {
+        transform: translate(2.5px, 1.5px) rotate(0.5deg)
+    }
+    66% {
+        transform: translate(1.5px, 2.5px) rotate(1.5deg)
+    }
+    68% {
+        transform: translate(-0.5px, 0.5px) rotate(0.5deg)
+    }
+    70% {
+        transform: translate(-1.5px, 2.5px) rotate(1.5deg)
+    }
+    72% {
+        transform: translate(1.5px, 2.5px) rotate(1.5deg)
+    }
+    74% {
+        transform: translate(-0.5px, 2.5px) rotate(0.5deg)
+    }
+    76% {
+        transform: translate(1.5px, 2.5px) rotate(0.5deg)
+    }
+    78% {
+        transform: translate(2.5px, 0.5px) rotate(0.5deg)
+    }
+    80% {
+        transform: translate(-1.5px, -0.5px) rotate(0.5deg)
+    }
+    82% {
+        transform: translate(-0.5px, -1.5px) rotate(0.5deg)
+    }
+    84% {
+        transform: translate(1.5px, 1.5px) rotate(-0.5deg)
+    }
+    86% {
+        transform: translate(-0.5px, 2.5px) rotate(0.5deg)
+    }
+    88% {
+        transform: translate(-1.5px, 2.5px) rotate(0.5deg)
+    }
+    90% {
+        transform: translate(-0.5px, -0.5px) rotate(-0.5deg)
+    }
+    92% {
+        transform: translate(2.5px, 1.5px) rotate(-0.5deg)
+    }
+    94% {
+        transform: translate(1.5px, 2.5px) rotate(0.5deg)
+    }
+    96% {
+        transform: translate(0.5px, 2.5px) rotate(-0.5deg)
+    }
+    98% {
+        transform: translate(2.5px, 0.5px) rotate(1.5deg)
+    }
+    0%,
+    100% {
+        transform: translate(0, 0) rotate(0)
+    }
+}

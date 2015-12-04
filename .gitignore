@@ -1,3 +1,6 @@
 css/
 css/*
+node_modules/*
 node_modules
+.sass-cache
+.sass-chace/*
