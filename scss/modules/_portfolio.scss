@@ -22,6 +22,7 @@
   float: left;
   margin: 10px 0;
   position: relative;
+  background: #FFE4BB;
 
   @include media(em(900)) {
     margin: 10px;
@@ -30,6 +31,7 @@
   @include media($medium-screen) {
     height: 400px;
     width: 300px;
+    background: url(../images/ss.gif)
   }
 
   &--large {
@@ -39,6 +41,8 @@
         width: 620px;
         height: 400px;
         max-width: 100%;
+        background: url(../images/ss_b.gif)
+
     }
     &-content {
 
@@ -231,7 +235,7 @@ box-shadow: 0px -10px 75px -20px rgba(0,0,0,0.59);
     }
     & :not(.portfolio__box) + img {
       filter: blur(3px) ; //grayscale(50%);
-      opacity: 0.4;
+      // opacity: 0.4;
       -webkit-transform: scale3d(1.1,1.1,1);
       transform: scale3d(1.1,1.1,1);
     }
@@ -316,6 +320,7 @@ box-shadow: 0px -10px 75px -20px rgba(0,0,0,0.59);
   @include media(em(700)) {
     width: 620px;
     height: 820px;
+    background: url(../images/ss_big.gif) 0 0 no-repeat;
   }
 }
 .portfolio__textfield {
@@ -450,4 +455,12 @@ transition: background-color .5s;
 
 .fa-envelope {
   color: #BBBBBB;
+}
+img {
+	opacity: 1;
+	transition: opacity 0.3s;
+}
+
+img[data-src] {
+	opacity: 0;
 }
