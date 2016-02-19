@@ -23,6 +23,7 @@ $(window).load(function() {
       filter: selector
     });
   });
+
 });
 
 // FILTER TOGGLE
