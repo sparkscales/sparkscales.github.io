@@ -528,7 +528,7 @@ label {
   label abbr {
     display: none; }
 
-input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], textarea,
+input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="w"], input[type="week"], textarea,
 select[multiple=multiple],
 textarea {
   background-color: #fff;
@@ -722,7 +722,7 @@ a:hover {
     .portfolio__item {
       height: 400px;
       width: 300px;
-      background: url(../images/ss.gif); } }
+      background: url('../images/ss.gif'); } }
   .portfolio__item--large {
     max-width: 300px;
     height: auto; }
@@ -731,7 +731,7 @@ a:hover {
         width: 620px;
         height: 400px;
         max-width: 100%;
-        background: url(../images/ss_b.gif); } }
+        background: url('../images/ss_b.gif'); } }
 
 .portfolio__image {
   position: relative;
@@ -948,7 +948,7 @@ figcaption:not(.portfolio__box) .portfolio__text {
   .portfolio__item--xlarge {
     width: 620px;
     height: 820px;
-    background: url(../images/ss_big.gif) 0 0 no-repeat; } }
+    background: url('../images/ss_big.gif') 0 0 no-repeat; } }
 
 .portfolio__textfield {
   background: #fff;
@@ -1043,7 +1043,7 @@ figcaption:not(.portfolio__box) .portfolio__text {
   border-color: #FCB040; }
 
 .bImage {
-  background: url(../images/back_s.png) 99px 194px no-repeat transparent;
+  background: url('../images/back_s.png') 99px 194px no-repeat transparent;
   padding-top: 102px;
   background-color: #fff; }
   .bImage .portfolio__hr {
@@ -1182,7 +1182,7 @@ img[data-src] {
   width: 300px;
   height: 400px;
   position: relative;
-  background: #ffe4bb url("http://www.stevescales.com/images/ss_bg.jpg");
+  background: #ffe4bb url("../images/ss_bg.jpg");
   overflow: hidden; }
 
 .face {
@@ -1201,7 +1201,7 @@ img[data-src] {
   top: 50%; }
 
 .nut {
-  background: url("http://www.stevescales.com/images/ss_nut_overlay.png");
+  background: url("../images/ss_nut_overlay.png");
   width: 175px;
   height: 275px;
   position: absolute;
@@ -1330,7 +1330,7 @@ img[data-src] {
   100% {
     transform: translateY(0); } }
 .ss_contact {
-  background: url("http://www.stevescales.com/images/ss_flight_path.png") no-repeat;
+  background: url("../images/ss_flight_path.png") no-repeat;
   top: 0;
   left: 0;
   width: 100%;
@@ -1338,7 +1338,7 @@ img[data-src] {
   z-index: 11; }
 
 .ss_plane {
-  background: url("http://www.stevescales.com/images/ss_plane.png") no-repeat;
+  background: url("../images/ss_plane.png") no-repeat;
   height: 130px;
   width: 180px;
   position: absolute;

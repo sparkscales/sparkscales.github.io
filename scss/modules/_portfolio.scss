@@ -31,7 +31,7 @@
   @include media($medium-screen) {
     height: 400px;
     width: 300px;
-    background: url(../images/ss.gif)
+    background: url('../images/ss.gif')
   }
 
   &--large {
@@ -41,7 +41,7 @@
         width: 620px;
         height: 400px;
         max-width: 100%;
-        background: url(../images/ss_b.gif)
+        background: url('../images/ss_b.gif')
 
     }
     &-content {
@@ -320,7 +320,7 @@ box-shadow: 0px -10px 75px -20px rgba(0,0,0,0.59);
   @include media(em(700)) {
     width: 620px;
     height: 820px;
-    background: url(../images/ss_big.gif) 0 0 no-repeat;
+    background: url('../images/ss_big.gif') 0 0 no-repeat;
   }
 }
 .portfolio__textfield {
